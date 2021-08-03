@@ -13,3 +13,4 @@ services:
       - NODE_ENV=production
     volumes:
       - .:/opt/app
+      - ./data:/otp/app/data
