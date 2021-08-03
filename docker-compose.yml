@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     image: nodejs-tutorial
     ports: 
-      - "1234:3000"
+      - "1204:3000"
     env_file:
       - .env
     environment:
