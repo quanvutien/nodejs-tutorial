@@ -1,11 +1,12 @@
 FROM keymetrics/pm2:12-alpine
 
-RUN mkdir -p /opt/app
-
-COPY . /opt/app
-
 WORKDIR /opt/app
+
+COPY ["package.json", "package-lock.json*", "./"]
+
 RUN npm install
+
+COPY . .
 
 EXPOSE 3000
 
